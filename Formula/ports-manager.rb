@@ -1,22 +1,22 @@
 class PortsManager < Formula
   desc "Simple, fast, and reliable CLI tool for managing port mappings"
   homepage "https://github.com/adi-family/cli-ports-manager"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-macos-arm64"
-      sha256 "654c9ac05065ba17f96cf03a010fdb711abe5a6d60bc034cfdf115f4f2accb9f"
+      url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.1/ports-manager-macos-arm64"
+      sha256 "b11952ccf2db7289b9e074e8340d8f176ecdeab7ff6a7b8ffaa375c73b4c0c20"
     else
-      url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-macos-amd64"
-      sha256 "5c7612a952595d0951bc858f5bb46c5e92469113b10b5b17b7391be25bef7922"
+      url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.1/ports-manager-macos-amd64"
+      sha256 "cf197faa820c4cb4e4df10a557d58e2846f105e6f72979b64006338b769fabe5"
     end
   end
 
   on_linux do
-    url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-linux-amd64"
-    sha256 "7545b36c8500f4ccfb1177ca66def1adb8e2b218a0f9d6832a034cd137a5f20d"
+    url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.1/ports-manager-linux-amd64"
+    sha256 "703a36ae6bb61bd75a103a568e4e8f52d4f2b772f7fd2c0c91e34ca19d8781b1"
   end
 
   def install
