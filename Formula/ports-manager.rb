@@ -7,16 +7,16 @@ class PortsManager < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-macos-arm64"
-      sha256 "PLACEHOLDER_ARM64_SHA256"
+      sha256 "654c9ac05065ba17f96cf03a010fdb711abe5a6d60bc034cfdf115f4f2accb9f"
     else
       url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-macos-amd64"
-      sha256 "PLACEHOLDER_AMD64_SHA256"
+      sha256 "5c7612a952595d0951bc858f5bb46c5e92469113b10b5b17b7391be25bef7922"
     end
   end
 
   on_linux do
     url "https://github.com/adi-family/cli-ports-manager/releases/download/v0.1.0/ports-manager-linux-amd64"
-    sha256 "PLACEHOLDER_LINUX_SHA256"
+    sha256 "7545b36c8500f4ccfb1177ca66def1adb8e2b218a0f9d6832a034cd137a5f20d"
   end
 
   def install
